@@ -4,6 +4,9 @@
 - include:              '../tasks/apt_update.yml'
   when:                 install_files_result.changed 
                         or shell_commands_result.changed
+- include:              '../tasks/apt_upgrade.yml'
+  when:                 install_files_result.changed 
+                        or shell_commands_result.changed
 - include:              '../tasks/install_packages.yml'
 - include:              '../tasks/enable_services.yml'
 - include:              '../tasks/start_services.yml'

@@ -1,0 +1,4 @@
+---
+dependencies:
+  - role:       'automatic_updates'     # Mostly for aptitutude, required for apt module's upgrade operation.
+    when:       skipdeps is not defined

@@ -1,7 +1,7 @@
 # X2Go Repository (release builds)
-deb http://packages.x2go.org/debian jessie main
+deb http://packages.x2go.org/debian stretch main
 # X2Go Repository (sources of release builds)
-deb-src http://packages.x2go.org/debian jessie main
+deb-src http://packages.x2go.org/debian stretch main
 
 # X2Go Repository (nightly builds)
 #deb http://packages.x2go.org/debian jessie heuler

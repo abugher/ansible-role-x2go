@@ -8,11 +8,13 @@ install_files:
 # Key fingerprint from:
 # https://wiki.x2go.org/doku.php/wiki:repositories:debian
 shell_commands:
-  - command:            'apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E && touch /etc/apt/x2go_key_is_added.txt'
+  - command:            'APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1 apt-key adv --no-tty --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E && touch /etc/apt/x2go_key_is_added.txt'
     user:               'root'
     chdir:              '/'
     creates:            '/etc/apt/x2go_key_is_added.txt'
 install_packages:
+  #- 'nxagent'
+  #- 'x2goserver-x2goagent'
   - 'x2goserver'
   - 'x2goserver-xsession'
 enable_services:
