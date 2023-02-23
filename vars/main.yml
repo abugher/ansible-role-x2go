@@ -21,3 +21,4 @@ enable_services:
   - 'x2goserver'
 start_services:
   - 'x2goserver'
+  - 'automatic_updates'
