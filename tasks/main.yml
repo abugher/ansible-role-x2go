@@ -1,4 +1,5 @@
 ---
+- include:              '../tasks/dependencies.yml'
 - include:              '../tasks/install_files.yml'
 - include:              '../tasks/shell_commands.yml'
 - include:              '../tasks/apt_update.yml'

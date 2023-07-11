@@ -1,3 +1,12 @@
+deb http://packages.x2go.org/debian bookworm main
+deb-src http://packages.x2go.org/debian bookworm main
+
+deb http://packages.x2go.org/debian bullseye main
+deb-src http://packages.x2go.org/debian bullseye main
+
+deb http://packages.x2go.org/debian buster main
+deb-src http://packages.x2go.org/debian buster main
+
 # X2Go Repository (release builds)
 deb http://packages.x2go.org/debian stretch main
 # X2Go Repository (sources of release builds)

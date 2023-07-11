@@ -1,4 +1,8 @@
 ---
+dependencies:
+  # Allow automatic-updates to set the OS release version before trying to
+  # install x2go.
+  - 'automatic-updates'
 install_files:
   - owner:              'root'
     group:              'root'
@@ -21,4 +25,3 @@ enable_services:
   - 'x2goserver'
 start_services:
   - 'x2goserver'
-  - 'automatic_updates'
