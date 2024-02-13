@@ -3,11 +3,13 @@ dependencies:
   # Allow automatic-updates to set the OS release version before trying to
   # install x2go.
   - 'automatic-updates'
+debian_list:            "{{ role_path }}/files/conf/x2go_debian.list"
+raspi_list:             "{{ role_path }}/files/conf/x2go_raspi.list"
 install_files:
   - owner:              'root'
     group:              'root'
     mode:               '0644'
-    src:                "{{ role_path }}/files/conf/x2go.list"
+    src:                "{{ raspi_list if 'raspberry-pi' == hostvars[inventory_hostname]['platform'] else debian_list }}"
     dest:               '/etc/apt/sources.list.d/x2go.list'
 # Key fingerprint from:
 # https://wiki.x2go.org/doku.php/wiki:repositories:debian
