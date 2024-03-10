@@ -1,0 +1,7 @@
+---
+dependencies:
+  # Allow automatic-updates to set the OS release version before trying to
+  # install x2go.
+  - role:     'automatic-updates'
+    tags:     
+      - 'dependency'

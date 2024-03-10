@@ -1,8 +1,4 @@
 ---
-dependencies:
-  # Allow automatic-updates to set the OS release version before trying to
-  # install x2go.
-  - 'automatic-updates'
 debian_list:            "{{ role_path }}/files/conf/x2go_debian.list"
 raspi_list:             "{{ role_path }}/files/conf/x2go_raspi.list"
 install_files:
