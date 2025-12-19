@@ -1,3 +1,0 @@
-# https://wiki.x2go.org/doku.php/wiki:repositories:debian
-deb http://packages.x2go.org/debian buster extras main
-deb-src http://packages.x2go.org/debian buster extras main

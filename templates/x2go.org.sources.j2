@@ -1,0 +1,7 @@
+# https://wiki.x2go.org/doku.php/wiki:repositories:debian
+
+Types: deb deb-src
+URIs: http://packages.x2go.org/{{ os_alias }}
+Suites: {{ os_release_name }}
+Components: {{ components|join(' ') }}
+Signed-By: {{ keyring_file }}

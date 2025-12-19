@@ -1,3 +1,0 @@
-# https://wiki.x2go.org/doku.php/wiki:repositories:raspbian
-deb http://packages.x2go.org/raspbian bookworm main
-deb-src http://packages.x2go.org/raspbian bookworm main
